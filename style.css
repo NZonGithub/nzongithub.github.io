@@ -1,16 +1,45 @@
 body {
     margin: 0;
     display: flex;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: sans-serif;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: snow;
 }
 
-.banner {
-    width: 100%;
-    height: 100vh;
+body > section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.banner {
+    background-color: #ff2f3f;
+    height: 100vh;
     text-align: center;
-    font-size: 3vmin;
+}
+
+.banner .title {
+    margin: 0 16px;
+    font-size: 7vmin;
+}
+
+.banner .about {
+    margin: 32px 16px 0 16px;
+    font-weight: 300;
+    font-size: calc(8px + 1.5vmin);
+}
+
+.feedback {
+    background-color: #312426;
+    padding: 32px 0;
 }
